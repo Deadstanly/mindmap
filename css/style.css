@@ -1,0 +1,61 @@
+body {
+  min-width: 320px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.logo {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.header_top-menu {
+  background-color: #efefef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header_top-link {
+  color: grey;
+}
+
+.header_top-link:hover{
+  color: orangered;
+  transition: 0.3s;
+}
+
+.nav_link:hover {
+  color: orangered;
+  transition: 0.3s;
+}
+
+.naw_row {
+  align-items: center;
+}
+
+.card_title_price {
+  color: #1c7430;
+}
+
+.btn-outline-success.btn.btn-block,
+.btn-success.btn.btn-block{
+  border-radius: 0;
+}
+
+.footer {
+  background-color: #efefef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer a {
+  color: grey;
+}
