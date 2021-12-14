@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="auto">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates&display=swap" rel="stylesheet">
+	<title>Admin panel</title>
+	</head>
+	<body>
+
+		<div class="header_top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a href="" class="header_top-link mr-5">О проекте</a>
+						<a href="" class="header_top-link mr-5">Блог</a>
+						<a href="" class="header_top-link mr-5">Вопрос — Ответ</a>
+						<a href="" class="header_top-link mr-5">Служба поддержки</a>
+						<a href="users.html"  class="header_top-link enter mr-5">Выйти</a>
+						<a href="cart.html" class="cart btn btn-success">Корзина <i class="fas fa-shopping-cart"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="header mt-5 text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="logo">ADMIN PANEL</h1>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<nav class="nav mt-5 text-center">
+			<div class="container">
+				<hr>
+				<div class="row nav_row" >
+					<div class="col-md-8">
+						<a href="users.html" class="nav_link mr-5">Главная</a>
+						<a href="catalog.html" class="nav_link mr-5">Каталог карт</a>
+						<a href="contacts.html" class="nav_link mr-5">Наши контакты</a>
+						<a href="news.html" class="nav_link mr-5">Полезная информация</a>
+						<a href="about.html" class="nav_link">О нас</a>
+					</div>
+					<div class="col-md-3 p-1">
+						<input type="text" class="form-control" placeholder="Поиск по сайту...">
+					</div>
+					<div class="col-md-1 p-1">
+						<button class="btn btn-success">Поиск</button>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</nav>
+
+
+        <div class="admin-panel mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 offset-md-4 ">
+                        <form>
+                            <input type="text" class="form-control card_name" placeholder="Описание карточки">
+                            <input type="text" class="form-control url_adress" placeholder="Url картинки">
+                            <input type="text" class="form-control price" placeholder="Цена">
+                            <input type="text" class="form-control сurrency" placeholder="Валюта">
+                            <button class="btn btn-primary admin_submit mt-3">Отправить</button>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+		<footer class="footer text-center mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<a class="mr-5" href="terms.html">Пользовательское соглашение</a>
+						<a href="privacy.html">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script type="module" src="/js/componens/createKwork.js"></script>
+		<script type="module" src="/js/componens/exitAuth.js"></script>
+	</body>
+	</html>

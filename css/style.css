@@ -37,7 +37,7 @@ section {
   transition: 0.3s;
 }
 
-.naw_row {
+.nav_row {
   align-items: center;
 }
 
@@ -59,3 +59,57 @@ section {
 .footer a {
   color: grey;
 }
+
+.form-control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.auth_form {
+  min-height: 500px;
+}
+
+.admin-panel {
+  min-height: 500px;
+}
+
+.comment .container{
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.theme_cooment {
+  font-size: 20px;
+  color: royalblue;
+}
+
+.small {
+  color: grey;
+}
+
+.comment_block {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.stars {
+  color: #ffa800;
+}
+
+.comment a {
+  cursor: pointer;
+}
+
+.hide {
+  display: none !important;
+}
+
+.good_comment:hover,
+.bad_comment:hover {
+  color: orangered;
+  opacity: 0.8;
+}
+
