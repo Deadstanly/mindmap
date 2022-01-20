@@ -113,3 +113,15 @@ section {
   opacity: 0.8;
 }
 
+.active {
+  color: orangered;
+}
+
+.modal {
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.card_search {
+
+}

@@ -1,4 +1,5 @@
 import{getData} from '../serviсes/getData.js';
+import{addItemToCart} from '../componens/addToCart.js'
 
 function renderingKwork() {
    getData('https://mindmap-f5c39-default-rtdb.firebaseio.com/kworks.json').then(data => Object.values(data)).then(data => {
@@ -7,16 +8,18 @@ function renderingKwork() {
            `<div class="col-md-3 text-center mt-5">
                 <div class="card">
                     <div class="card-header ">${item.cardName}</div>
-                    <img src="${item.url}">
+                    <img class="card-img" src="${item.url}">
                     <hr>
                     <h5 class="card_title_price">${item.price} ${item.сurrency}</h5>
                     <hr>
                     <button class="btn-outline-success btn btn-block">Подробнее</button>
-                    <button class="btn btn-success btn-block">Добавить в корзину</button>
+                    <button class="btn btn-success btn-block cart_add">Добавить в корзину</button>
                 </div>
            </div>`;
         })
-   })
+   }).then(() => addItemToCart())
 }
+
+
 
 export{renderingKwork}

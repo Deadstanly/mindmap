@@ -51,15 +51,28 @@
 						<a href="about.html" class="nav_link">О нас</a>
 					</div>
 					<div class="col-md-3 p-1">
-						<input type="text" class="form-control" placeholder="Поиск по сайту...">
+						<input type="text" class="form-control search_panel" placeholder="Поиск по сайту...">
 					</div>
 					<div class="col-md-1 p-1">
-						<button class="btn btn-outline-success">Поиск</button>
+						<button class="btn btn-outline-success btn_search">Поиск</button>
 					</div>
 				</div>
 				<hr>
 			</div>
 		</nav>
+
+		<section class="modal_window text-center hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 offset-md-4">
+						<div class="card card_search">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 
 		<div class="main_img text-center">
 			<div class="container">
@@ -114,18 +127,20 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2 class="mt-5 mb-5"><b>Отзывы о нас</b></h2>
-						<a class="good_comment mr-5">Положительные</a><a class="bad_comment">Отрицательные</a>
+						<a class="good_comment active mr-5">Положительные</a><a class="bad_comment">Отрицательные</a>
 						<hr>
-						<div class="col-md-12 good_comments">
+						<div class="col-md-12 good_comments comment_link">
 
 						</div>
-						<div class="col-md-12 bad_comments hide">
+						<div class="col-md-12 bad_comments comment_link hide">
 
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+
 
 		<footer class="footer  text-center">
 			<div class="container">
@@ -137,6 +152,8 @@
 				</div>
 			</div>
 		</footer>
+
+
 
 		<script type="module" src="/js/main.js"></script>
 	</body>

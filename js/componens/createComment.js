@@ -29,6 +29,9 @@ function createComment() {
     })
 }
 
+
+
+
 function createStars(starsCount) {
     let str = '';
 
