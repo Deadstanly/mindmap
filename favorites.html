@@ -23,11 +23,22 @@
 						<a href="comments.html" class="header_top-link mr-5">Отзывы</a>
 						<a href="" class="header_top-link mr-5">Служба поддержки</a>
 						<a href="auth.html"  class="header_top-link enter mr-5">Войти</a>
-						<a href="cart.html" class="cart-btn btn btn-success">Корзина<i class="fas fa-shopping-cart"></i></a>
+						<a href="cart.html" class="cart btn btn-success">Корзина <i class="fas fa-shopping-cart"></i></a>
+						<a href="favorites.html" class="btn btn-danger favorites-btn"><i class="far fa-heart"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<header class="header mt-5 text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="logo">Избранное</h1>
+					</div>
+				</div>
+			</div>
+		</header>
 
 		<nav class="nav mt-5 text-center">
 			<div class="container">
@@ -51,50 +62,15 @@
 			</div>
 		</nav>
 
-		<header class="header mt-5 text-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1 class="logo">Ваша корзина</h1>
-					</div>
-				</div>
-				<div class="col-md-6 offset-md-3 mt-3 sum-cart">
-					<h2 class="sum-result">Сумма заказа: <span class="num"></span></h2>
-				</div>
-				<div class="row mt-5">
-					<div class="col-md-6 offset-md-3 text-left">
-						<form>
-							<div class="form-group">
-							  <label for="exampleInputEmail1">Email address</label>
-							  <input type="email" class="form-control email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-							  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-							</div>
-							<div class="form-group">
-							  <label for="exampleInputName">Ваше имя</label>
-							  <input type="name" class="form-control name" placeholder="Введите имя">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputSurname">Ваша фамилия</label>
-								<input type="name" class="form-control surname" placeholder="Введите фамилию">
-							  </div>
+        <section class="favorites mt-5">
+            <div class="container">
+                <div class="row favorites-panel">
 
-							<button type="button" class="btn btn-outline-success btn-cart mt-3">Оформить заказ</button>
-						  </form>
-					</div>
-				</div>
-			</div>
-		</header>
+                </div>
+            </div>
+        </section>
 
-		<div class="cart-section">
-			<div class="container">
-				<div class="row cart">
-
-				</div>
-			</div>
-		</div>
-
-
-		<footer class="footer text-center mt-5">
+        <footer class="footer  text-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -106,9 +82,8 @@
 		</footer>
 
 
-
-    <script type="module" src="/js/componens/renderingCartItems.js"></script>
-    <script type="module" src="/js/componens/deleteFromCart.js"></script>
-	<script type="module" src="js/componens/order.js"></script>
-</body>
-</html>
+		<script type="module" src="/js/componens/renderingCartItems.js"></script>
+		<script type="module" src="/js/componens/renderingFavoritesItem.js"></script>
+		<script type="module" src="/js/componens/deleteFromFavorites.js"></script>
+	</body>
+	</html>

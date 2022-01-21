@@ -11,7 +11,7 @@ function search(str, arr) {
     resultSearchArr.forEach(element => {
         document.querySelector('.card_search').innerHTML =
         `<div class="card">
-            <div class="card-header ">${element.cardName}</div>
+            <div class="card-header">${element.cardName}</div>
             <img src="${element.url}">
             <hr>
             <h5 class="card_title_price">${element.price} ${element.сurrency}</h5>

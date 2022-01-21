@@ -46,7 +46,8 @@ section {
 }
 
 .btn-outline-success.btn.btn-block,
-.btn-success.btn.btn-block{
+.btn-success.btn.btn-block,
+.favorites_add{
   border-radius: 0;
 }
 
@@ -122,6 +123,6 @@ section {
   padding: 20px;
 }
 
-.card_search {
-
+.favorites {
+  min-height: 540px;
 }

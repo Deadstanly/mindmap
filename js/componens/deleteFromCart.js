@@ -15,6 +15,3 @@ document.querySelectorAll('.cart_delete').forEach(item => {
     })
 })
 
-
-
-

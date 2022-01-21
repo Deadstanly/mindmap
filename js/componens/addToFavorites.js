@@ -1,34 +1,33 @@
-function addItemToCart() {
+function addToFavorites() {
 
-
-    document.querySelectorAll('.cart_add').forEach(element => {
+    document.querySelectorAll('.favorites_add').forEach(element => {
         element.addEventListener('click', () => {
-            console.log(element)
 
             let cardHeader = element.parentElement.querySelector('.card-header').textContent;
             let cardUrlImg = element.parentElement.querySelector('.card-img').src;
             let cardPrice = element.parentElement.querySelector('.card_title_price').textContent;
             let cardCurrency = element.parentElement.querySelector('.card_сurrency').textContent;
 
-            let cardObj = {
+            let favoritesObj = {
                 'cardHeader': cardHeader,
                 'cardUrl': cardUrlImg,
                 'cardPrice': cardPrice,
                 'cardсurrency': cardCurrency
             }
 
-            let arrCards = [];
+            let arrFavorites = [];
 
-            if(localStorage.getItem('cardObj')) {
-                arrCards = JSON.parse(localStorage.getItem('cardObj'))
+            if(localStorage.getItem('favoritesObj')) {
+                arrFavorites = JSON.parse(localStorage.getItem('favoritesObj'));
             }
 
-            arrCards.push(cardObj)
+            arrFavorites.push(favoritesObj);
 
-            localStorage.setItem('cardObj', JSON.stringify(arrCards))
-        })
-    })
-}
+            localStorage.setItem('favoritesObj', JSON.stringify(arrFavorites));
 
+            alert('Добавлено в избранное !');
+        });
+    });
+};
 
-export {addItemToCart}
+export {addToFavorites};
